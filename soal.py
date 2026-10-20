@@ -15,4 +15,6 @@ form.pack()
 for i in range(1, 11):
     tk.Label(form, text=f"Nilai Mata Pelajaran {i}:", font=("Arial", 9), fg="#d2dcf0", bg="#1f2c4c", width=18, anchor="w").grid(row=i, column=0, pady=2)
     tk.Entry(form, font=("Arial", 9), width=16, bg="#2d3d63", fg="white", relief="solid", bd=1).grid(row=i, column=1, pady=2)
+
+tk.Label(box, text="Pilihan Jurusan Anda:", font=("Arial", 9, "bold"), fg="#00e5ff", bg="#1f2c4c").pack(pady=(10, 2))
 root.mainloop()
