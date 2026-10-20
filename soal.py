@@ -26,4 +26,7 @@ tk.Label(box, text="Pilihan Jurusan Anda:", font=("Arial", 9, "bold"), fg="#00e5
 prodi = ttk.Combobox(box, values=["Teknologi Informasi", "Teknik Informatika", "Sistem Informasi", "Kedokteran"], state="readonly", width=20)
 prodi.set("Teknologi Informasi")
 prodi.pack(pady=(0, 10))
+
+tk.Button(box, text="Hasil Prediksi", command=prediksi, font=("Arial", 9, "bold"), bg="#e6ecf5", relief="groove").pack()
+
 root.mainloop()
