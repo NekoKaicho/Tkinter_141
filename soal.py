@@ -1,6 +1,11 @@
 import tkinter as tk
 from tkinter import ttk
 
+def prediksi():
+    win = tk.Toplevel(root, bg="#00d2ff")
+    win.geometry("320x100")
+    tk.Label(win, text="Prediksi Prodi: Teknologi Informasi", font=("Arial", 11, "bold"), fg="#00e5ff", bg="#1a2540").pack(fill="both", expand=True, padx=3, pady=3)
+
 root = tk.Tk()
 root.title("Aplikasi Prediksi Prodi Pilihan")
 root.geometry("420x580")
