@@ -10,4 +10,6 @@ box.pack(padx=15, pady=15, fill="both", expand=True)
 
 tk.Label(box, text="Aplikasi Prediksi Prodi Pilihan", font=("Arial", 13, "bold"), fg="white", bg="#1f2c4c").pack(pady=10)
 
+form = tk.Frame(box, bg="#1f2c4c")
+form.pack()
 root.mainloop()
