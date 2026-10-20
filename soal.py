@@ -31,4 +31,6 @@ prodi.pack(pady=(0, 10))
 
 tk.Button(box, text="Hasil Prediksi", command=prediksi, font=("Arial", 9, "bold"), bg="#e6ecf5", relief="groove").pack()
 
+root.bind("<Return>", lambda event: prediksi())
+
 root.mainloop()
