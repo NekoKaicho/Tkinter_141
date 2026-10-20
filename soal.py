@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import ttk
 
 root = tk.Tk()
 root.title("Aplikasi Prediksi Prodi Pilihan")
@@ -17,4 +18,7 @@ for i in range(1, 11):
     tk.Entry(form, font=("Arial", 9), width=16, bg="#2d3d63", fg="white", relief="solid", bd=1).grid(row=i, column=1, pady=2)
 
 tk.Label(box, text="Pilihan Jurusan Anda:", font=("Arial", 9, "bold"), fg="#00e5ff", bg="#1f2c4c").pack(pady=(10, 2))
+prodi = ttk.Combobox(box, values=["Teknologi Informasi", "Teknik Informatika", "Sistem Informasi", "Kedokteran"], state="readonly", width=20)
+prodi.set("Teknologi Informasi")
+prodi.pack(pady=(0, 10))
 root.mainloop()
